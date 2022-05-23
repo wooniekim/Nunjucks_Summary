@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+
+{% block content %} <!--layout.html의 block content에 내용 표시-->
+<h1>{{message}}</h1> <!--res.render로부터 message와 error변수를 받아서 렌더링-->
+<h2>{{error.status}}</h2>
+<pre>{{error.stack}}</pre>
+{% endblock %}

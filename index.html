@@ -1,0 +1,6 @@
+{% extends 'layout.html' %} <!-- layout.html을 상속함-->
+
+{% block content %} <!--layout.html의 block content부분에 밑의 내용을 넣음-->
+<h1>{{title}}</h1> <!--res.render로부터 title이라는 변수를 받아 렌더링-->
+<p>Welcome to {{title}}</p>
+{% endblock %}
